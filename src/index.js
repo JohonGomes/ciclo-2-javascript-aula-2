@@ -10,10 +10,12 @@
 var largura = 5;
 var altura = 4;
 
+area = largura * altura
+
 // Calculando a área da parede
 
 // Exibindo o resultado no console
-console.log("A área da parede é:");
+console.log("A área da parede é:", area);
 
 //-------------------------------------------------------------------------------------------------
 
@@ -28,12 +30,16 @@ console.log("A área da parede é:");
 var nome = "João";
 var sobrenome = "Silva";
 
+
 // Juntando os nomes com a mensagem de boas-vindas
-  
-       //seu código
+
+nomeCompleto = nome.concat(" ", sobrenome)
+
+//seu código
 
 // Exibindo a mensagem no console
-console.log();
+console.log("Seja bem vindo",nome,sobrenome);
+console.log("Seja bem vindo", nomeCompleto) // uso do método .concat()
 
 
 //-------------------------------------------------------------------------------------------------
@@ -50,12 +56,11 @@ console.log();
 var idadeEmAnos = 30;
 
 // Calculando anos em dias
-  
-      //seu código
-
+ var diasVividos = idadeEmAnos * 365;
+//seu código
 
 // Exibindo o resultado no console
-console.log("O funcionário viveu aproximadamente... dias");
+console.log(`O funcionário viveu aproximadamente ${diasVividos} dias.`);
 
 //-------------------------------------------------------------------------------------------------
 
@@ -71,9 +76,10 @@ console.log("O funcionário viveu aproximadamente... dias");
 var duracaoEmMinutos = 135;
 
 // Calculando horas e minutos
-  
-      //seu código
+var calcularHoras = Math.trunc(duracaoEmMinutos / 60);
+var restoDivisao = duracaoEmMinutos % 60;
 
+//seu código
 
 // Exibindo o resultado no console
-console.log("O evento durou ...horas e ... minutos.");
+console.log(`O evento durou ${calcularHoras} horas e ${restoDivisao} minutos.`);
